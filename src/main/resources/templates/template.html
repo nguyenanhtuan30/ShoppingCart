@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping</title>
+</head>
+<body>
+<div th:fragment="header">
+    <h1>Thymeleaf Fragments sample</h1>
+</div>
+
+
+
+<p>Go to the next page to see fragments in action</p>
+<aside>
+    <div>This is a sidebar</div>
+</aside>
+<hr>
+
+
+
+<footer th:fragment="footer">
+    <a th:href="@{/products/product-list}">Product List</a> |
+    <a th:href="@{/carts}">Cart</a> |
+</footer>
+</body>
+</html>
